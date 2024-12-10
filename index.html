@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ermias Abebe - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/layout.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <header>
+        <nav id="navbar">
+            <div class="logo">ERMIAS ABEBE</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content" data-aos="fade-up">
+                <div class="profile-container">
+                    <img src="/images/me.jpg" alt="Ermias Abebe" class="profile-img">
+                    <div class="profile-border"></div>
+                </div>
+                <h1 class="glitch" data-text="Ermias Abebe">Ermias Abebe Zewdie</h1>
+                <p class="tagline"><span id="typed"></span></p>
+                <p class="intro">Welcome to my portfolio! I am a dedicated Electrical and Computer Engineering student at Arbaminch University, passionate about embedded systems and software development.</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2 data-aos="fade-down">About Me</h2>
+                <div class="about-content">
+                    <div class="bio" data-aos="fade-right">
+                        <h3>Background</h3>
+                        <p>I am a 5th-year Electrical and Computer Engineering student with a strong foundation in both hardware and software development. My academic journey has equipped me with practical skills in circuit design, programming, and system integration.</p>
+                    </div>
+                    <div class="education" data-aos="fade-left">
+                        <h3>Education</h3>
+                        <div class="education-item">
+                            <div class="education-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="education-details">
+                                <h4>Arbaminch University</h4>
+                                <p>B.Sc. in Electrical and Computer Engineering</p>
+                                <p>Expected Graduation:June , 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 data-aos="fade-down">Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project cards will be dynamically populated via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 data-aos="fade-down">Skills</h2>
+                <div class="skills-container">
+                    <!-- Skills will be dynamically populated via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 data-aos="fade-down">Contact Me</h2>
+                <div class="contact-container">
+                    <form id="contact-form" data-aos="fade-up">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                    <div class="social-links" data-aos="fade-up">
+                        <a href="tel:+251965335366"><i class="fas fa-phone"></i></a> 
+                        <a href="https://www.linkedin.com/in/ermias-abebe-0a8b702b4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/ermias1808" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://www.upwork.com/freelancers/~010108e45e2e207f8d" target="_blank" class="social-link"><i class="fab fa-upwork"></i></i></a> 
+                            
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Ermias Abebe. All rights reserved.</p>
+            <nav class="footer-nav">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="/js/data.js"></script>
+    <script src="/js/animations.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
